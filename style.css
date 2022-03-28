@@ -99,16 +99,6 @@ window#waybar.chromium {
 	margin-right: 0;
 }
 
-#clock {
-  border-bottom: 2px solid #eee;
-  color: #eee;
-}
-
-#battery {
-  border-bottom: 2px solid #eee;
-	color: #eee;
-}
-
 #battery.charging,
 #battery.plugged {
 	color: #ffffff;
@@ -143,11 +133,22 @@ label:focus {
 #battery,
 #clock,
 #language,
-#custom-poweroff {
+#custom-poweroff,
+#custom-mail {
   margin-left: 4px;
-  border-bottom: 1px solid rgb(220, 220, 220);
+  border-top: 1px solid rgb(100, 100, 100);
   color: rgb(220, 220, 220);
   margin-bottom: 2px;
+  /* border-radius: 4px; */
+}
+
+#custom-poweroff {
+  min-width: 20px;
+  color: red;
+}
+
+#custom-mail {
+  min-width: 40px;
 }
 
 #network.disconnected {

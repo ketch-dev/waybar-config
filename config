@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": [ "pulseaudio", "network", "cpu", "memory", "sway/language", "battery", "battery#bat2", "clock", "custom/poweroff", "tray"],
+    "modules-right": [ "pulseaudio", "network", "cpu", "memory", "sway/language", "battery", "battery#bat2", "clock", "custom/poweroff", "custom/mail", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -24,6 +24,22 @@
     //         "default": ""
     //     }
     // },
+    "sway/window": {
+      "icon": true,
+      "rewrite": {
+        "(.*) — Mozilla Firefox": "Mozilla Firefox",
+        "(.*) — Mozilla Firefox (Private Browsing)": "Mozilla Firefox (Private)",
+        "(.*) (—|-) Visual Studio Code": "Visual Studio Code",
+        "(.*) - zsh": " [$1]"
+     }
+    },
+
+    "custom/mail": {
+      "tooltip": false,
+      "exec": "sh $HOME/.config/waybar/scripts/mail.sh",
+      "interval": 120,
+      "on-click": "thunderbird && swaymsg '[app_id=thunderbird] focus'"
+  },
     "custom/poweroff": {
       "tooltip": false,
       "format": "",
