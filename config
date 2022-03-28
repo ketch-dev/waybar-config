@@ -27,10 +27,10 @@
     "sway/window": {
       "icon": true,
       "rewrite": {
-        "(.*) — Mozilla Firefox": "Mozilla Firefox",
-        "(.*) — Mozilla Firefox (Private Browsing)": "Mozilla Firefox (Private)",
+        "(.*) (—|-) Mozilla Firefox": "Mozilla Firefox",
+        "(.*) (—|-) Mozilla Firefox (Private Browsing)": "Mozilla Firefox (Private)",
+        "(.*) (—|-) Mozilla Thunderbird": "Mozilla Thunderbird",
         "(.*) (—|-) Visual Studio Code": "Visual Studio Code",
-        "(.*) - zsh": " [$1]"
      }
     },
 
