@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": [ "pulseaudio", "network", "cpu", "memory", "sway/language", "battery", "battery#bat2", "clock", "custom/poweroff", "custom/mail", "tray"],
+    "modules-right": [ "pulseaudio", "network", "cpu", "memory", "sway/language", "battery", "battery#bat2", "clock", "custom/poweroff", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -91,7 +91,7 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 20,
         "spacing": 10
     },
     "clock": {
