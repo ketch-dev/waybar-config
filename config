@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": [ "pulseaudio", "network", "cpu", "memory", "sway/language", "battery", "battery#bat2", "clock", "custom/poweroff", "tray"],
+    "modules-right": [ "pulseaudio", "cpu", "memory", "battery", "battery#bat2", "clock", "sway/language", "custom/poweroff", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -146,7 +146,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 4, // %, can be a float
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
