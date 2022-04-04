@@ -134,12 +134,18 @@ label:focus {
 #clock,
 #language,
 #custom-poweroff,
+#custom-weather,
 #custom-mail {
   margin-left: 4px;
   color: rgb(220, 220, 220);
   margin-bottom: 6px;
   border-radius: 4px;
   background: rgb(30, 30, 50)
+}
+
+#custom-weather {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 #custom-poweroff {
